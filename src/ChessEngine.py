@@ -457,7 +457,7 @@ class Move():
         self.move_Id = self.start_Row * 1000 + self.start_Col * 100 + self.end_Row * 10 + self.end_Col
 
         if en_Passant:
-            self.piece_Captured == 'bP' if self.piece_Moved == 'wP' else 'wP'
+            self.piece_Captured = 'bP' if self.piece_Moved == 'wP' else 'wP'
 
     '''
     overriding the equals method
